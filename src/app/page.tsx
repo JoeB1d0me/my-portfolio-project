@@ -1,103 +1,66 @@
 import Image from "next/image";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import placeholder from "../../public/goober-cat.gif"
 
-export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+export default function Home(){
+  return(
+    <div className="min-h-screen bg-gray-800 text-white flex items-center justify-start flex-col ">
+      <nav className="flex justify-between py-8 w-full max-w-4xl">
+        <h1 className="font-bold text-lg">Kingsley Ulinfun</h1>
+        <a className="bg-sky-700 px-4 py-1 rounded-sm border-b-2 border-sky-800 ring ring-sky-900 hover:bg-white hover:text-sky-700 transition-colors focus:border-b-0 focus:mt-0.5" href="/kingsley_ulinfun_resume.pdf"> Resume</a>
+      </nav>
+
+      <header className="w-full max-w-prose space-y-8">
+        <figure className="size-48 rounded-full overflow-hidden">
+        <Image src={placeholder} alt="Placeholder-image" />
+        </figure>
+        <h1 className="font-bold text-4xl">Hey there! I'm Kingsley!</h1>
+        <p className="text-lg">Computer Science student at UGA</p>
+        <ul className="flex text-4xl gap-4">
+          <li><a href="https://github.com/JoeB1d0me"><FaGithub /></a></li>
+          <li> <a href="https://linkedin.com"><FaLinkedin /></a></li>
+
+        </ul>
+      </header>
+      <section className="w-full max-w-prose space-y-8">
+        <h2 className="text-2xl text-sky-400 font-bold">Education</h2>
+
+        <div className="flex">
+          <article className="flex-1">
+            <p><b>The University of Georgia</b> </p>
+            <p><i>Franklin College, Athens, GA</i></p>
+            <p>Bachelor of Science, COmputer Science</p>
+          </article>
+          <article className="text-right">
+
+          </article>
+        </div>
+      </section>
+
+      <section className="w-full max-w-prose space-y-4">
+        <h2 className="text-2xl text-sky-400 font-bold">Projects</h2>
+
+        <div className="grid-cols-2">
+          <a href="https://github.com/agreene5/Loads-O-Money" className=" bg-gray-50 gap-2 shadow-md transition-shadow">
+            <span className="font-bold text-xl">Project Title </span>
+            <span>Project DescriptionDescriptionDescriptionDescription</span>
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+        <footer className="flex justify-between py-8 w-full max-w-4xl border-t border-gray-500">
+        <p className="text-gray-400 text-sm">
+          &copy; 2025 Kingsley Ulinfun
+          </p>
+          <ul className="flex text-xl gap-4">
+          <li><a href="https://github.com/JoeB1d0me"><FaGithub /></a></li>
+          <li> <a href="https://linkedin.com"><FaLinkedin /></a></li>
+
+        </ul>
       </footer>
+
+
     </div>
   );
 }
