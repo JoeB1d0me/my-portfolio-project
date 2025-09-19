@@ -8,11 +8,11 @@ export default function Home(){
     <div className="min-h-screen bg-gray-800 text-white flex items-center justify-start flex-col ">
       <nav className="flex justify-between py-8 w-full max-w-4xl">
         <h1 className="font-bold text-lg">Kingsley Ulinfun</h1>
-        <a className="bg-sky-700 px-4 py-1 rounded-sm border-b-2 border-sky-800 ring ring-sky-900 hover:bg-white hover:text-sky-700 transition-colors focus:border-b-0 focus:mt-0.5" href="/kingsley_ulinfun_resume.pdf"> Resume</a>
+        <a className="bg-sky-700 px-4 py-1 rounded-sm border-b-2 border-sky-800 ring ring-sky-900 hover:bg-white hover:text-sky-700 transition-colors focus:border-b-0 focus:mt-0.5" href="/kingsley_ulinfun_resume.pdf" target="_blank"> Resume</a>
       </nav>
 
       <header className="w-full max-w-prose space-y-8">
-        <figure className="size-48 rounded-full overflow-hidden">
+        <figure className="size-48 overflow-auto rounded-3xl">
         <Image src={placeholder} alt="Placeholder-image" />
         </figure>
         <h1 className="font-bold text-4xl">Hey there! I'm Kingsley!</h1>
@@ -29,12 +29,25 @@ export default function Home(){
         <div className="flex">
           <article className="flex-1">
             <p><b>The University of Georgia</b> </p>
-            <p><i>Franklin College, Athens, GA</i></p>
-            <p>Bachelor of Science, COmputer Science</p>
+            <p><i>Franklin College,</i> Athens, GA</p>
+            <p>Bachelor of Science, Computer Science</p>
           </article>
           <article className="text-right">
-
+            <p>Expected Graduation: May 2027</p>
+            <p>GPA: 3.72</p>
           </article>
+        </div>
+        <div className="flex">
+          <article className="flex-1">
+            <p><b>Georgia State University</b></p>
+            <p><i>College of Arts and Sciences,</i> Atlanta, GA</p>
+            <p>Bachelor of Science, Computer Science</p>
+          </article>
+          <article className="text-right">
+            <p>August 2023 - July 2025</p>
+            <p>GPA: 3.81</p>
+          </article>
+
         </div>
       </section>
 
