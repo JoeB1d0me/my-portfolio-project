@@ -1,22 +1,26 @@
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import placeholder from "../../public/goober-cat.gif"
+import Script from "next/script";
+import Button from "@/components/button";
+
 
 
 export default function Home(){
+  //Resume button event
   return(
     <div className="min-h-screen bg-gray-800 text-white flex items-center justify-start flex-col ">
       <nav className="flex justify-between py-8 w-full max-w-4xl">
         <h1 className="font-bold text-lg">Kingsley Ulinfun</h1>
-        <a className="bg-sky-700 px-4 py-1 rounded-sm border-b-2 border-sky-800 ring ring-sky-900 hover:bg-white hover:text-sky-700 transition-colors focus:border-b-0 focus:mt-0.5" href="/kingsley_ulinfun_resume.pdf" target="_blank"> Resume</a>
+        <Button text="Resume" href="/kingsley_ulinfun_resume.pdf" />
       </nav>
 
       <header className="w-full max-w-prose space-y-8">
         <figure className="size-48 overflow-auto rounded-3xl">
         <Image src={placeholder} alt="Placeholder-image" />
         </figure>
-        <h1 className="font-bold text-4xl">Hey there! I'm Kingsley!</h1>
-        <p className="text-lg">Computer Science student at UGA</p>
+        <h1 className="font-bold text-4xl">Hey there! I'm Kingsley Ulinfun!</h1>
+        <p className="text-lg">Computer Science student at the University of Georgia</p>
         <ul className="flex text-4xl gap-4">
           <li><a href="https://github.com/JoeB1d0me"><FaGithub /></a></li>
           <li> <a href="https://linkedin.com"><FaLinkedin /></a></li>
@@ -54,8 +58,8 @@ export default function Home(){
       <section className="w-full max-w-prose space-y-4">
         <h2 className="text-2xl text-sky-400 font-bold">Projects</h2>
 
-        <div className="grid-cols-2">
-          <a href="https://github.com/agreene5/Loads-O-Money" className=" bg-gray-50 gap-2 shadow-md transition-shadow">
+        <div className="grid-cols-2 gap-4">
+          <a href="https://github.com/agreene5/Loads-O-Money" className=" bg-gray-700 gap-2 shadow-md transition-shadow hover:shadow-lg rounded-md px-6 py-4 flex flex-col">
             <span className="font-bold text-xl">Project Title </span>
             <span>Project DescriptionDescriptionDescriptionDescription</span>
           </a>
