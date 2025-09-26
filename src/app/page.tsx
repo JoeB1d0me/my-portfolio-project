@@ -7,12 +7,12 @@ import Button from "@/components/button";
 
 
 export default function Home(){
-  //Resume button event
+
   return(
     <div className="min-h-screen bg-gray-800 text-white flex items-center justify-start flex-col ">
       <nav className="flex justify-between py-8 w-full max-w-4xl">
         <h1 className="font-bold text-lg">Kingsley Ulinfun</h1>
-        <Button text="Resume" href="/kingsley_ulinfun_resume.pdf" />
+        <Button text="Resume" href="/resume.pdf" />
       </nav>
 
       <header className="w-full max-w-prose space-y-8">
