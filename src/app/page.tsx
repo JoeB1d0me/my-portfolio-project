@@ -3,18 +3,21 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import placeholder from "../../public/goober-cat.gif"
 import Script from "next/script";
 import Button from "@/components/button";
+import EvilButton from "@/components/evilbutton";
 
 
 
 export default function Home(){
 
   return(
+    <main>
     <div className="min-h-screen bg-gray-800 text-white flex items-center justify-start flex-col ">
       <nav className="flex justify-between py-8 w-full max-w-4xl">
         <h1 className="font-bold text-lg">Kingsley Ulinfun</h1>
         <Button text="Resume" href="/resume.pdf" />
+        {/*< EvilButton text="Don't click me" /> */}
       </nav>
-
+      <section id="About">
       <header className="w-full max-w-prose space-y-8">
         <figure className="size-48 overflow-auto rounded-3xl">
         <Image src={placeholder} alt="Placeholder-image" />
@@ -27,6 +30,7 @@ export default function Home(){
 
         </ul>
       </header>
+      </section>
       <section className="w-full max-w-prose space-y-8">
         <h2 className="text-2xl text-sky-400 font-bold">Education</h2>
 
@@ -79,5 +83,6 @@ export default function Home(){
 
 
     </div>
+    </main>
   );
 }
