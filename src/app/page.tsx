@@ -20,8 +20,10 @@ export default function Home() {
         </figure>
 
         <h1 className="font-bold text-4xl">Hey there! I'm Kingsley Ulinfun!</h1>
+        <h2 className="font-bold text-sky-400 text-2xl text-left">About me</h2>
         <p className="text-lg text-gray-300">
           Computer Science student at the University of Georgia
+
         </p>
 
         <ul className="flex text-4xl gap-6">
@@ -102,6 +104,17 @@ export default function Home() {
             <span>
               A semester project showcased at GSU’s Fall 2024 CMII student
               showcase. Available on itch.io
+            </span>
+          </a>
+          <a href="https://github.com/DevDogs-UGA/Community-Resource-Forum"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-700 hover:bg-gray-600 rounded-lg p-6 transition-shadow shadow-md hover:shadow-lg flex flex-col gap-2"
+
+          >
+            <span className="font-bold text-xl"> DevDogs UGA <i>Community Resource Forum</i></span>
+            <span>
+              DevDog's 2025-2026 project: a community forum website for computer science students at UGA.
             </span>
           </a>
         </div>

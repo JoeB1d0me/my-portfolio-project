@@ -19,7 +19,7 @@ export default function Navbar() {
       {isHome ? (
         // On homepage → use anchor links
         <>
-        
+        <h1>Kingsley Ulinfun</h1>
           <a href="#about" className="hover:text-blue-500">About</a>
           <a href="#projects" className="hover:text-blue-500">Projects</a>
           <a href="#contact" className="hover:text-blue-500">Contact</a>

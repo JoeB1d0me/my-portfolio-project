@@ -28,8 +28,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased ` } 
       >
+       
         <Navbar /> Menu
-        <main className="scroll-pt-16" >{children}</main>
+        <main className="scroll-pt-16" >{children} </main> 
       </body>
     </html>
   );
