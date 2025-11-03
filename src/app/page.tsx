@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import placeholder from "../../public/goober-cat.gif";
 import Button from "@/components/button";
+import EvilButton from "@/components/evilbutton";
 
 export default function Home() {
   return (
@@ -18,14 +19,17 @@ export default function Home() {
             className="object-cover w-full h-full"
           />
         </figure>
-
+       
         <h1 className="font-bold text-4xl">Hey there! I'm Kingsley Ulinfun!</h1>
         <h2 className="font-bold text-sky-400 text-2xl text-left">About me</h2>
-        <p className="text-lg text-gray-300">
-          Computer Science student at the University of Georgia
-
+        <div className="prose w-full">
+        <p className="text-lg text-gray-300 content-center">
+          Hi! I'm third year computer science transfer student at the University of Georgia with a passion for fullstack development and game development.
+          I have been learning to code since I was about 12 years old. I started out with Youtube videos and online tutorials before I ever took any classes.
+          I'm most experienced with Python and Java as a result of my coursework. <br /> Currently, I'm learning how to build web apps with Next.js, which is what I'm creating this website with.
         </p>
-
+        {/* <EvilButton text="Don't click" /> */}
+        </div>
         <ul className="flex text-4xl gap-6">
           <li>
             <a
@@ -51,6 +55,66 @@ export default function Home() {
 
         <Button text="Resume" href="/resume.pdf" />
       </section>
+
+      {/* Projects Section */}
+      <section
+        id="projects"
+        className="w-full max-w-4xl px-6 py-16 space-y-6 text-left"
+      >
+        <h2 className="text-2xl text-sky-400 font-bold">Projects</h2>
+
+        <div className="grid sm:grid-cols-2 gap-6">
+          <a
+            href="https://github.com/agreene5/Loads-O-Money"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-700 hover:bg-gray-600 rounded-lg p-6 transition-shadow shadow-md hover:shadow-lg flex flex-col gap-2"
+          >
+            <span className="font-bold text-xl">Loads o' Money</span>
+            <span>
+             A 2D top-down shooter built in Godot where the player character's currency serves as both health and ammunition.
+             <br /><li>I designed the health system to manage damage interactions between player and cpu enemies.</li>
+             Featured at GSU's Fall 2024 CMII Student Showcase.
+            </span>
+            <span className="text-sm text-gray-400 mt-2">
+              <b>Technologies: </b> Godot, GitHub
+            </span>
+          </a>
+          <a
+          href="https://github.com/ntdog36/Twin_Generals"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-gray-700 hover:bg-gray-600 rounded-lg p-6 transition-shadow shadow-md hover:shadow-lg flex flex-col gap-2"
+          >
+            <span className="font-bold text-xl">Twin Generals</span>
+            <span>
+              A turn-based strategic multiplayer game that allows the player to command a single army over a campaign against another player or AI.
+              Players work to capture strategic points on the map and lead their armies in fights against each other.
+              <br /><li>Currently implementing battle mechanics including victories and post battle mechanics. </li>
+            </span>
+            <span className="text-sm text-gray-400 mt-2">
+              <b>Technologies: </b> Unity, C#, GitHub
+            </span>
+
+          </a>
+          <a href="https://github.com/DevDogs-UGA/Community-Resource-Forum"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-700 hover:bg-gray-600 rounded-lg p-6 transition-shadow shadow-md hover:shadow-lg flex flex-col gap-2"
+
+          >
+            <span className="font-bold text-xl"> DevDogs UGA <i>Community Resource Forum</i></span>
+            <span>
+              Project for DevDogs 2025-2026 that serves as a resource forum for computer science students at the University of Georgia.
+              <br /><li>As part of the images and embed handling team, I have been focusing on implementing media uploads to user posts on the forum site</li>
+            </span>
+            <span className="text-sm text-gray-400 mt-2">
+              <b>Technologies: </b> Next.js, 
+            </span>
+          </a>
+        </div>
+      </section>
+
 
       {/* Education Section */}
       <section
@@ -86,39 +150,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section
-        id="projects"
-        className="w-full max-w-4xl px-6 py-16 space-y-6 text-left"
-      >
-        <h2 className="text-2xl text-sky-400 font-bold">Projects</h2>
 
-        <div className="grid sm:grid-cols-2 gap-6">
-          <a
-            href="https://github.com/agreene5/Loads-O-Money"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-700 hover:bg-gray-600 rounded-lg p-6 transition-shadow shadow-md hover:shadow-lg flex flex-col gap-2"
-          >
-            <span className="font-bold text-xl">Loads o' Money</span>
-            <span>
-              A semester project showcased at GSU’s Fall 2024 CMII student
-              showcase. Available on itch.io
-            </span>
-          </a>
-          <a href="https://github.com/DevDogs-UGA/Community-Resource-Forum"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-700 hover:bg-gray-600 rounded-lg p-6 transition-shadow shadow-md hover:shadow-lg flex flex-col gap-2"
-
-          >
-            <span className="font-bold text-xl"> DevDogs UGA <i>Community Resource Forum</i></span>
-            <span>
-              DevDog's 2025-2026 project: a community forum website for computer science students at UGA.
-            </span>
-          </a>
-        </div>
-      </section>
 
       {/* Contact Section */}
       <section
