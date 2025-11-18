@@ -1,1 +1,0 @@
-//This will be dedicated to a more in depth about page, I'll put more descriptive info
