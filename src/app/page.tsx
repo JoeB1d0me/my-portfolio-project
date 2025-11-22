@@ -53,7 +53,7 @@ export default function Home() {
           </li>
         </ul>
 
-        <Button text="Resume" href="/resume.pdf" />
+        <Button text="Resume" href="https://v2qis4ebbdo4c1yr.public.blob.vercel-storage.com/resume.pdf" />
       </section>
 
       {/* Projects Section */}
